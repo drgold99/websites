@@ -12,7 +12,7 @@ h1 {
     line-height: 200%;
 }
 nav {
-    font-display: bold;
+    font-weight: bold;
     background-color: #BBDEFB;
 }
 h2 {
@@ -20,5 +20,20 @@ h2 {
     font-family: georgia, serif;
 }
 dt {
-
+    color: #002171;
+    font-weight: bold;
+}
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+footer {
+    font-size: .70em;
+    font: italic;
+    text-align: center;
+}
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
