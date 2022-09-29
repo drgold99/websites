@@ -75,10 +75,37 @@ dt {
     color: #002171;
     font-weight: bold;
 }
+
+table {
+    border: 1px solid #3399CC;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #DFEDF8;
+}
+
+td {
+    padding: 5px;
+    border: 1px solid #3399CC;
+}
+
+th {
+    padding: 5px;
+    border: 1px #3399CC;
+    text-align: center;
+}
+
 .resort {
     color: #1976D2;
     font-size: 1.2em;
 }
+
+.text {
+    text-align: left;
+}
+
 footer {
     background-color: #FFFFFF;
     font-size: .70em;
