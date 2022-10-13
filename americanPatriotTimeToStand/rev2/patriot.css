@@ -33,10 +33,19 @@ header {
 }
 :root {
     --hideOrShow:none;
+    --video1HideOrShow:none;
+    --video2HideOrShow:none;
     /**--selectedVideo:none;**/
 }
 .setdisplay {
     display: var(--hideOrShow);
     /**src: var(--selectedVideo);**/
 }
-
+#video1 {
+    display: var(--video1HideOrShow);
+    /**display: var(--hideOrShow);**/
+}
+#video2 {
+    display: var(--video2HideOrShow);
+    /**display: var(--hideOrShow);**/
+}

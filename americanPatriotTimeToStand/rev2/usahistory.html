@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="patriot.css">
+        
+        <title>American Patriot Time to Stand:: USA history</title>
+    </head>
+    <body>
+        <header>
+            <h1>American Patriot Time to Stand</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About us</a>
+            <div class="dropdown">
+                <a href="usahistory.html">USA history</a>
+                <div class="dropdown-content">
+                    <a onclick="showVideo(1)">Western Civilization</a>
+                    <a onclick="showVideo(2)">The US consitusion</a>
+                </div>
+            </div>
+            <a href="data.html">Data</a>
+        </nav>
+        
+        <main>
+            <h1>US history</h1>
+            <form onsubmit="test1()">
+                <label for="demo">type here</label>
+                <input type="text" id="demo" name="demo">
+                <input type="submit" value="click here">
+            </form>
+            <p id="demo">uweuy</p>
+            
+            <script>
+                function test1() {
+                    document.getElementById("demo").innerHTML = 8+1
+                }
+                var r=document.querySelector(":root")
+                var hideOrShow=1
+                const videoPropertyList=["--video1HideOrShow","--video2HideOrShow"]
+                function showVideo(selectVideoNum){
+                    var videoIndex=selectVideoNum-1
+                    console.log(selectVideoNum)
+                    /*if (selectVideoNum==1) {
+                        r.style.setProperty("--selectedVideo","url(https://www.prageru.com/video/were-one-step-closer-to-dictatorship)")
+                    }
+                    else if (selectVideoNum==2) {
+                        r.style.setProperty("--selectedVideo","url(https://www.prageru.com/video/the-constitution-the-limited-powers-of-congress)")
+                    }*/
+                    r.style.setProperty(videoPropertyList[videoIndex],"inline")
+                    var i=0
+                    //console.log("length = "+videoPropertyList.length)
+                    while(i<videoPropertyList.length){
+                        if (i!=videoIndex) {
+                            r.style.setProperty(videoPropertyList[i],"none")
+                        }
+                        i++
+                    } 
+                }
+                /**function hideVideo(skipThisIndex) {
+                    var i=0
+                    //console.log("length = "+videoPropertyList.length)
+                    while(i<videoPropertyList.length){
+                        if (i!=skipThisIndex) {
+                            r.style.setProperty(videoPropertyList[i],"none")
+                        }
+                        i++
+                    }
+                }**/
+            </script>
+            <iframe class="setdisplay" id="video1" src="https://www.prageru.com/video/were-one-step-closer-to-dictatorship" width="975" height="600" ></iframe>
+            <iframe class="setdisplay" id="video2" src="https://www.prageru.com/video/the-constitution-the-limited-powers-of-congress" width="975" height="600" ></iframe>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
